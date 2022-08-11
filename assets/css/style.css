@@ -1,5 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER ====================================================== */
+.header {
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    top: 0;
+
+    background: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px 21px;
+
+    font-size: 44px;
+    color: white;
+}
+
+h1, legend {
+    font-family: 'Righteous', cursive;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+legend {
+    font-size: 26px;
+    margin-bottom: 17px;
+}
+
+/* CONTENT ====================================================== */
+.content {
+    margin: 92px 0;
+    padding: 31px 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 95vw;
+    gap: 16px;
+    overflow-x: scroll;
+    padding-right: 20px;
+}
+
+fieldset:not(:last-child) {
+    margin-bottom: 27px;
+}
+
+.card {
+    width: 172px;
+    height: 216px;
+    padding: 14px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h4 {
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+}
+
+/* FOOTER ====================================================== */
+.footer {
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 16px 25px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 0 100px;
+    font-size: 20px;
+    color: white;
+}
+
+.disabled {
+    background-color: #CBCBCB;
+}
+
+.enabled {
+    background-color: #32B72F;
 }
