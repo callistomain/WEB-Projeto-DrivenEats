@@ -16,6 +16,7 @@ function validateForm() {
     const button = document.querySelector("button");
     button.textContent = "Fechar pedido";
     button.classList.replace("disabled", "enabled");
+    button.addEventListener("click", e => openInNewTab("")); // CHANGE
     removeInputListeners();
   }
 }
@@ -27,3 +28,7 @@ function addInputListeners() {
 function removeInputListeners() {
   inputs.forEach(e => e.removeEventListener("click", validateForm));
 }
+
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+ }
