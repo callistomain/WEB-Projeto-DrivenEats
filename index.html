@@ -36,7 +36,7 @@
                   <img src="./assets/images/one.png">
                   <h4>Frango Yin Yang</h4>
                   <p>Um pouco de batata, um pouco de salada</p>
-                  <h5>R$ 14,90</h5>
+                  <h5>R$ 25,40</h5>
                   <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
               </label>
@@ -112,7 +112,7 @@
                   <img src="./assets/images/one.png">
                   <h4>Frango Yin Yang</h4>
                   <p>Um pouco de batata, um pouco de salada</p>
-                  <h5>R$ 14,90</h5>
+                  <h5>R$ 7,35</h5>
                   <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
               </label>
@@ -188,7 +188,7 @@
                   <img src="./assets/images/one.png">
                   <h4>Frango Yin Yang</h4>
                   <p>Um pouco de batata, um pouco de salada</p>
-                  <h5>R$ 14,90</h5>
+                  <h5>R$ 35,29</h5>
                   <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
               </label>
@@ -260,6 +260,27 @@
       <button class="disabled" type="submit">
         Selecione os 3 itens para fechar o pedido
       </button>
+    </div>
+
+    <!-- CONFIRM-ORDER ================================== -->
+    <div class="confirm-wrapper hide">
+      <div class="confirm">
+        <p class="title">Confirme seu pedido</p>
+        <div class="item">
+          <p></p><p></p>
+        </div>
+        <div class="item">
+          <p></p><p></p>
+        </div>
+        <div class="item">
+          <p></p><p></p>
+        </div>
+        <div class="item bold">
+          <p>TOTAL</p><p></p>
+        </div>
+        <p class="option1" onclick="executeOrder()">Tudo certo, pode pedir!</p>
+        <p class="option2" onclick="toggleConfirmScreen()">Cancelar</p>
+      </div>
     </div>
   </body>
 </html>
