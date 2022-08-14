@@ -102,7 +102,9 @@ input:checked+label>div ion-icon {
 }
 
 .card img {
-    width: 100%;
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
 }
 
 .card h4 {
@@ -205,12 +207,8 @@ button {
 
 /* RESPONSIVE ================================= */
 @media (min-width: 1023px) {
-    body>* {
-        display: none;
-    }
-
     body::after {
-        content: "LARGURA-MINIMA 1024PX";
+        content: "MOBILE-ONLY";
         text-align: center;
         font-weight: bold;
         font-size: 5.7vw;
